@@ -182,7 +182,7 @@ text-transform: uppercase;
 
        }
        .shorping_btn:{
-        
+
 
        }
        .shop_bnt{
@@ -211,6 +211,61 @@ text-transform: uppercase;
         letter-spacing: 2px;
         text-transform: uppercase;
        }
+       .card_row{
+        display: flex;
+        padding:20px 50px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       }
+       .card_img>img{
+        display: flex;
+      padding:0px 5px;
+        height: 483px;
+        flex-shrink: 0;
+       }
+       .card_text{
+        display: flex;
+ 
+width: 173.5px;
+height: 45.733px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: var(--Brand-Primary, #000);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Headline/H5/Desktop Large */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 125% */
+letter-spacing: 0.5px;
+       }
+       .card_img>a{
+        color: var(--Brand-Primary, #000);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+/* Text Button/Desktop */
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.4px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+position: absolute;
+
+       }
+       .card_img_a1{
+        margin-right:  20px;
+       }
     </style>
 </head>
 <body>
@@ -223,7 +278,7 @@ text-transform: uppercase;
         <div class="icon">
             <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M9.13223 10.0001L4.82003 5.58327C4.61546 5.37374 4.61531 5.03387 4.81968 4.82415C5.02405 4.61442 5.35556 4.61426 5.56012 4.82379L9.96415 9.33466C9.98791 9.333 10.0118 9.333 10.0355 9.33466L14.4395 4.82379C14.6441 4.61426 14.9756 4.61442 15.18 4.82415C15.3844 5.03387 15.3842 5.37374 15.1796 5.58327L10.8674 10.0001L15.1796 14.4169C15.3842 14.6264 15.3844 14.9663 15.18 15.176C14.9756 15.3857 14.6441 15.3859 14.4395 15.1764L10.0355 10.6655C10.0118 10.6672 9.98791 10.6672 9.96415 10.6655L5.56012 15.1764C5.35556 15.3859 5.02405 15.3857 4.81968 15.176C4.61531 14.9663 4.61546 14.6264 4.82003 14.4169L9.13223 10.0001Z" fill="#414B56"></path></svg>
 
-            </div>
+    </div>
      </div>
      <!-- ----------Header Banner--------- -->
         <div class="container banner_container">
@@ -264,8 +319,30 @@ text-transform: uppercase;
                 </div>
 
             </div>
-       </div>
+        </div> 
+        <!-- ----------card--- -->
+
+        <div class="row container">
+            <div class="row card_row">
+                <div class="card_img">
+                    <img src="assets/image 18.png" alt="">
+                    <p class="card_text">Weekend Wear</p>
+                </div>
+                <div class="card_img">
+                    <img src="assets/image 16.png" alt="">
+                    <p class="card_text">Merino Wool </p>
+                    <a class="card_img_a1" href="">Shop Womens</a>
+                    <a href="">Shop Mens</a>
+                </div>
+                <div class="card_img">
+                    <img src="assets/image 17.png" alt="">
+                    <p class="card_text">Cotton Staples </p>
+                </div>
+            </div>
+        </div>
+       
+
      
        
-       
+ </body>   
 </html>
