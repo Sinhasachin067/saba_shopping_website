@@ -1,348 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-      
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-        *{
-            padding: 0;
-            margin:0;
-            box-sizing: border-box;
-            font-family: "Poppins";
-        }
-        body{
-            overflow-x: hidden;
-        }
-        .container{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;   
-        }
-        .row{
-            display: flex;
-            /* flex-direction: column; */
-        }
-        .head{
-            background-color: black;
-            color:white;
-            height: 43px;
-            text-align: center;
-            flex-shrink: 0;
-            align-self: stretch;
-        }
-        .head_row>p>a{
-           color:white;
-        }
-      
-        .icon {
-            right: 34px;
-            position: absolute;
-            top: 10px;
-        }
-       .icon>svg>path{
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .row {
+        display: flex;
+        /* flex-direction: column; */
+      }
+
+      .head {
+        background-color: black;
+        color: white;
+        height: 43px;
+        text-align: center;
+        flex-shrink: 0;
+        align-self: stretch;
+      }
+
+      .head_row > p > a {
+        color: white;
+      }
+
+      .icon {
+        right: 34px;
+        position: absolute;
+        top: 10px;
+      }
+
+      .icon > svg > path {
         fill: white;
-       }
-       /* ------------ */
-       .banner_container{
-         position: relative;
+      }
+
+      /* ------------ */
+      .banner_container {
+        position: relative;
         width: 100%;
         /* height: 50%; */
         /* background-color: red; */
-     
-       }
-       .banner_head{
+      }
+
+      .banner_head {
         height: 84vh;
         width: 100%;
         background-image: url(assets/head_banner.png);
         background-repeat: no-repeat;
         align-self: stretch;
-        background-size:cover;
-        position:sticky;
-        
-       }
-       .row_btn{
+        background-size: cover;
+        position: sticky;
+      }
+
+      .row_btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 27px;
         position: relative;
-        color:white;
-       }
-       .row_btn:hover{
+        color: white;
+      }
+
+      .row_btn:hover {
         background-color: white;
-        .ul_li>ul>li>a,.head_saba,.ul_li>ul>li>a>svg>path{
-            color:black;
-            fill:black;
+
+        .ul_li > ul > li > a,
+        .head_saba,
+        .ul_li > ul > li > a > svg > path {
+          color: black;
+          fill: black;
         }
-       
-       }
-     
-       .ul_li>ul{
+      }
+
+      .ul_li > ul {
         display: flex;
-        align-items: center;  
-       }
-       .ul_li>ul>li{
+        align-items: center;
+      }
+
+      .ul_li > ul > li {
         list-style: none;
-        padding:0px 14px;
-       }
-       .ul_li>ul>li>a{
+        padding: 0px 14px;
+      }
+
+      .ul_li > ul > li > a {
         text-decoration: none;
-        color:white;
-text-align: center;
+        color: white;
+        text-align: center;
 
-
-/* Navigation/Primary Desktop */
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 133.333% */
-letter-spacing: 1.5px;
-text-transform: uppercase;
-       }
-       .ul_li>ul>li>a>svg>path{
-        fill:white;
+        /* Navigation/Primary Desktop */
+        font-family: Poppins;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
-       }
-       .head_saba{
-        color:  #FFF;
-text-align: center;
-font-feature-settings: 'liga' off, 'clig' off;
-/* Navigation/Primary Desktop */
-font-family: Poppins;
-font-size: 41px;
-font-style: normal;
-font-weight: 200;
-line-height: 16px; /* 133.333% */
-letter-spacing: 1.5px;
-text-transform: uppercase;
-position: absolute;
-top: 26px;
-left: 45.8%;
-text-align: center;
-margin:0 0px 0px 
-       }
-       .head_body{
+        line-height: 16px;
+        /* 133.333% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      .ul_li > ul > li > a > svg > path {
+        fill: white;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .head_saba {
+        color: #fff;
+        text-align: center;
+        font-feature-settings: "liga" off, "clig" off;
+        /* Navigation/Primary Desktop */
+        font-family: Poppins;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 16px;
+        /* 133.333% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 26px;
+        left: 45.8%;
+        text-align: center;
+        margin: 0 0px 0px;
+      }
+
+      .head_body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin:10px;
+        margin: 10px;
         margin-top: 200px;
-       }
-       .para1{
+      }
+
+      .para1 {
         width: 191.126px;
         height: 14px;
         flex-shrink: 0;
-        color: var(--Brand-Secondary, #FFF);
+        color: var(--Brand-Secondary, #fff);
         text-align: center;
-        font-feature-settings: 'liga' off, 'clig' off;
+        font-feature-settings: "liga" off, "clig" off;
         /* Headline/H6/Desktop */
         font-family: Poppins;
         font-size: 11px;
         font-style: normal;
         font-weight: 500;
-        line-height: 16px; /* 145.455% */
+        line-height: 16px;
+        /* 145.455% */
         letter-spacing: 2px;
         text-transform: uppercase;
-       }
-       .para2{
+      }
+
+      .para2 {
         display: flex;
-width: 559px;
-height: 45.733px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: var(--Brand-Secondary, #FFF);
-text-align: center;
-font-feature-settings: 'liga' off, 'clig' off;
-font-family: Canela;
-font-size: 70px;
-font-style: normal;
-font-weight: 400;
-line-height: 120px; /* 171.429% */
-letter-spacing: 10px;
-text-transform: uppercase;
-       }
-       .shorping_btn{
+        width: 559px;
+        height: 45.733px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--Brand-Secondary, #fff);
+        text-align: center;
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: Canela;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120px;
+        /* 171.429% */
+        letter-spacing: 10px;
+        text-transform: uppercase;
+      }
+
+      .shorping_btn {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding:50px 0px;
+        padding: 50px 0px;
+      }
 
-       }
-       .shorping_btn:{
+      .shorping_btn {
+      }
 
-
-       }
-       .shop_bnt{
+      .shop_bnt {
         width: 200px;
         height: 40px;
         flex-shrink: 0;
-        background-color: #FFF;
-        color:black;
+        background-color: #fff;
+        color: black;
         text-align: center;
-        padding:6px;
+        padding: 6px;
         justify-content: center;
-       }
-       .shop_bnt>a{
+      }
+
+      .shop_bnt > a {
         width: 181.567px;
         color: var(--Text-Headline-Primary, #000);
         text-align: center;
         justify-content: center;
-        font-feature-settings: 'liga' off, 'clig' off;
+        font-feature-settings: "liga" off, "clig" off;
         text-decoration: none;
         /* Button/Desktop */
         font-family: Poppins;
         font-size: 11px;
         font-style: normal;
         font-weight: 500;
-        line-height: 14px; /* 127.273% */
+        line-height: 14px;
+        /* 127.273% */
         letter-spacing: 2px;
         text-transform: uppercase;
-       }
-       .card_row{
+      }
+
+      .card_row {
         display: flex;
-        padding:20px 50px;
+        padding: 48px 5px;
         justify-content: center;
         align-items: center;
         position: relative;
-       }
-       .card_img>img{
+      }
+
+      .card_img > img {
         display: flex;
-      padding:0px 5px;
+        padding: 0px 5px;
         height: 483px;
         flex-shrink: 0;
-       }
-       .card_text{
+      }
+
+      .card_text {
         display: flex;
- 
-width: 173.5px;
-height: 45.733px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: var(--Brand-Primary, #000);
-font-feature-settings: 'liga' off, 'clig' off;
 
-/* Headline/H5/Desktop Large */
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 125% */
-letter-spacing: 0.5px;
-       }
-       .card_img>a{
+        width: 173.5px;
+        height: 45.733px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
         color: var(--Brand-Primary, #000);
-text-align: center;
-font-feature-settings: 'liga' off, 'clig' off;
-/* Text Button/Desktop */
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 16px; /* 133.333% */
-letter-spacing: 0.4px;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-position: absolute;
+        font-feature-settings: "liga" off, "clig" off;
 
-       }
-       .card_img_a1{
-        margin-right:  20px;
-       }
+        /* Headline/H5/Desktop Large */
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        /* 125% */
+        letter-spacing: 0.5px;
+      }
+
+      .card_img > p > a {
+        color: var(--Brand-Primary, #000);
+        text-align: center;
+        font-feature-settings: "liga" off, "clig" off;
+        /* Text Button/Desktop */
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        /* 133.333% */
+        letter-spacing: 0.4px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+      }
+      .shop_women {
+        /* display: flex
+            ; */
+        position: absolute;
+      }
+      .horizontal_line {
+        width: 100%;
+        height: 1px;
+        background: #d3d6d8;
+      }
+      .slider_head > h2 {
+        color: var(--Text-Headline-Primary, #000);
+        /* text-align: center; */
+        font-feature-settings: "liga" off, "clig" off;
+
+        /* Headline/H1-PLP/Desktop */
+        font-family: Canela;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 63px; /* 106.25% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .container_slider {
+        display: flex;
+        flex-direction: column;
+        padding: 13px 39px;
+      }
+      .slider_product_name {
+        color: var(--Text-Headline-Primary, #000);
+        font-feature-settings: "liga" off, "clig" off;
+
+        /* Paragraph/Body/Bold */
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+      }
+      .slider_cards {
+        justify-content: space-between;
+      }
+      .slider_product_desc {
+        color: var(--Text-Paragraph-Primary, #000);
+        font-feature-settings: "liga" off, "clig" off;
+
+        /* Paragraph/Body/Desktop */
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px; /* 141.667% */
+        opacity: 0.6;
+      }
+      .slider {
+        position: relative;
+      }
+      .slider:hover {
+        .card_after {
+          height: 40px;
+        }
+        .card_after > p {
+          display: block;
+        }
+      }
+      .card_after {
+        position: absolute;
+
+        top: 78%;
+        left: 5px;
+        width: 278px;
+        height: 0px;
+        background-color: white;
+      }
+      .card_after > p {
+        display: none;
+        color: var(--Brand-Primary, #000);
+        text-align: center;
+        font-feature-settings: "liga" off, "clig" off;
+
+        /* Button/Desktop */
+        font-family: Poppins;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px; /* 127.273% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- -------------Header----------- -->
     <div class="container head">
-        <div class="row head_row">
-            <p>End of season sale - Up to 50% off  <a href="">Shop now</a></p>
-           
-        </div>
-        <div class="icon">
-            <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M9.13223 10.0001L4.82003 5.58327C4.61546 5.37374 4.61531 5.03387 4.81968 4.82415C5.02405 4.61442 5.35556 4.61426 5.56012 4.82379L9.96415 9.33466C9.98791 9.333 10.0118 9.333 10.0355 9.33466L14.4395 4.82379C14.6441 4.61426 14.9756 4.61442 15.18 4.82415C15.3844 5.03387 15.3842 5.37374 15.1796 5.58327L10.8674 10.0001L15.1796 14.4169C15.3842 14.6264 15.3844 14.9663 15.18 15.176C14.9756 15.3857 14.6441 15.3859 14.4395 15.1764L10.0355 10.6655C10.0118 10.6672 9.98791 10.6672 9.96415 10.6655L5.56012 15.1764C5.35556 15.3859 5.02405 15.3857 4.81968 15.176C4.61531 14.9663 4.61546 14.6264 4.82003 14.4169L9.13223 10.0001Z" fill="#414B56"></path></svg>
-
+      <div class="row head_row">
+        <p>End of season sale - Up to 50% off <a href="">Shop now</a></p>
+      </div>
+      <div class="icon">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class=""
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.13223 10.0001L4.82003 5.58327C4.61546 5.37374 4.61531 5.03387 4.81968 4.82415C5.02405 4.61442 5.35556 4.61426 5.56012 4.82379L9.96415 9.33466C9.98791 9.333 10.0118 9.333 10.0355 9.33466L14.4395 4.82379C14.6441 4.61426 14.9756 4.61442 15.18 4.82415C15.3844 5.03387 15.3842 5.37374 15.1796 5.58327L10.8674 10.0001L15.1796 14.4169C15.3842 14.6264 15.3844 14.9663 15.18 15.176C14.9756 15.3857 14.6441 15.3859 14.4395 15.1764L10.0355 10.6655C10.0118 10.6672 9.98791 10.6672 9.96415 10.6655L5.56012 15.1764C5.35556 15.3859 5.02405 15.3857 4.81968 15.176C4.61531 14.9663 4.61546 14.6264 4.82003 14.4169L9.13223 10.0001Z"
+            fill="#414B56"
+          ></path>
+        </svg>
+      </div>
     </div>
-     </div>
-     <!-- ----------Header Banner--------- -->
-        <div class="container banner_container">
-            <div class="banner_head">
-                <div class="row row_btn">
-                    <div class="head_menu ul_li">
-                        <ul>
-                            <li><a href="">WOMEN</a></li>
-                            <li><a href="">MEN</a></li>
-                            <li><a href="">COLLECTIONS</a></li>
-                        </ul>
-                    </div>
-                    <div class="head_name head_saba">SABA</div>
-                    <div class="head_btn ul_li">
-
-                        <ul>
-                          
-                            <li><a href=""><svg width="1rem" height="1rem" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="_3yKHc2dumpkFgr47i-p-H"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1718 11.7062C11.5198 11.7062 11.8018 11.4032 11.8018 11.0295V9.4964H15.1144L15.1144 11.0295C15.1144 11.4032 15.3965 11.7062 15.7444 11.7062C16.0924 11.7062 16.3744 11.4032 16.3744 11.0295V9.4964H19.1584L20.066 21.0708C20.101 21.4918 19.9704 21.9057 19.7065 22.2144C19.4425 22.5232 19.0697 22.6982 18.6795 22.6965L18.677 22.6965H8.04809C7.65692 22.6971 7.28445 22.521 7.02125 22.2114C6.75806 21.9018 6.62851 21.4875 6.6644 21.07L7.64398 9.4964H10.5418L10.5418 11.0295C10.5418 11.4032 10.8239 11.7062 11.1718 11.7062ZM10.5418 8.14307H7.06864C6.7428 8.14307 6.47073 8.40994 6.44123 8.75847L5.40964 20.9465C5.34122 21.7423 5.58848 22.5331 6.0908 23.124C6.59312 23.7148 7.304 24.051 8.04893 24.0499H18.6758C19.4201 24.0526 20.1311 23.7187 20.6346 23.1298C21.1383 22.5405 21.3876 21.7505 21.3213 20.9537L20.3653 8.76294C20.3378 8.41249 20.0649 8.14307 19.7375 8.14307H16.3744V6.7469C16.3703 5.15719 15.1729 3.87114 13.6946 3.86667L13.2234 3.86667C11.7433 3.87114 10.546 5.15719 10.5418 6.74499L10.5418 8.14307ZM11.8018 8.14307H15.1144L15.1144 6.7488C15.1122 5.90545 14.4763 5.22237 13.6928 5.22L13.2252 5.22C12.44 5.22237 11.804 5.90545 11.8018 6.7469V8.14307Z" fill="black"></path></svg></a></li>
-                            <li><a href=""><svg width="1rem" height="1rem" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4805 15.4059C10.7055 14.7083 10.1183 13.7841 9.85072 12.9619C9.83525 12.952 9.81987 12.9417 9.80416 12.9308C9.66516 12.8339 9.55035 12.7143 9.45786 12.552C8.85258 11.4838 8.90589 10.6023 9.46166 10.0301C9.48206 10.0091 9.50253 9.98908 9.52302 9.97007C9.52672 9.4865 9.57747 8.94564 9.70538 8.41279C9.71991 8.35225 9.73537 8.29248 9.75239 8.23128C9.85887 7.85368 10.1177 7.3353 10.5975 6.82166C11.3855 5.97804 12.5152 5.47333 14.0008 5.47333C15.4866 5.47333 16.6165 5.97802 17.4047 6.82161C17.8845 7.33526 18.1434 7.85366 18.2505 8.23352C18.2669 8.29248 18.2824 8.35225 18.2969 8.41279C18.4229 8.93775 18.4741 9.47049 18.4791 9.94856C18.4912 9.95916 18.5033 9.97009 18.5153 9.98136C19.0959 10.5238 19.1445 11.4139 18.5373 12.5465C18.4562 12.6977 18.3522 12.8187 18.2283 12.9172C18.2019 12.9383 18.1748 12.958 18.1485 12.9761C17.8564 13.815 17.2725 14.7233 16.5143 15.4077C16.5717 15.4495 16.6509 15.5045 16.7512 15.5695C17.0381 15.7556 17.3769 15.9431 17.7642 16.1189C17.9732 16.2138 18.191 16.3026 18.4172 16.3842C20.8972 17.2789 22.0182 19.2391 22.2086 22.2302C22.2689 23.1645 21.4929 24.06 20.5403 24.06H7.45581C6.49229 24.06 5.7309 23.1525 5.78819 22.2068C5.97402 19.2082 7.07287 17.3492 9.58059 16.4445C9.83078 16.3543 10.0684 16.2543 10.2933 16.1463C10.6501 15.9748 10.9571 15.7922 11.2129 15.6115C11.3482 15.5159 11.4378 15.4439 11.4805 15.4059ZM12.5343 16.1345C12.4993 16.2164 12.4468 16.2924 12.3771 16.3567C12.0997 16.6131 11.5916 16.9721 10.8592 17.324C10.5948 17.4511 10.3163 17.5683 10.0239 17.6737C8.06736 18.3795 7.24872 19.7645 7.09241 22.2867C7.07876 22.5121 7.28116 22.7533 7.45581 22.7533H20.5403C20.7137 22.7533 20.9178 22.5178 20.9046 22.3137C20.7442 19.7927 19.8939 18.3061 17.9737 17.6133C17.7143 17.5197 17.4644 17.4178 17.2242 17.3087C16.4514 16.958 15.9023 16.6019 15.5977 16.3505C15.5284 16.2933 15.474 16.2248 15.4348 16.1499C14.9834 16.3704 14.5003 16.5 14.0008 16.5C13.4893 16.5 12.9947 16.3639 12.5343 16.1345ZM10.6006 11.8892C10.7954 12.0082 10.9259 12.1299 11.0482 12.4248C11.4037 13.601 12.7537 15.1933 14.0008 15.1933C15.2483 15.1933 16.5966 13.603 16.9473 12.4491C17.0105 12.2064 17.1434 12.0661 17.3292 11.9478L17.3984 11.9052C17.5991 11.5255 17.6744 11.2476 17.6644 11.0653C17.6601 10.9871 17.6454 10.9568 17.6233 10.9362L17.6214 10.9344C17.6147 10.9283 17.6135 10.9271 17.6377 10.934C17.346 10.85 17.1502 10.5736 17.1679 10.2688L17.1698 10.2205C17.1839 9.77533 17.1487 9.22756 17.0264 8.7178C17.0154 8.67218 17.0039 8.62746 16.9923 8.58592C16.9379 8.39306 16.7695 8.05573 16.4499 7.71365C15.9056 7.13104 15.1196 6.77999 14.0008 6.77999C12.8823 6.77999 12.0966 7.13101 11.5524 7.7136C11.2329 8.0557 11.0644 8.39304 11.0107 8.58368C10.9985 8.62746 10.9869 8.67218 10.976 8.7178C10.8536 9.22756 10.8184 9.77533 10.8325 10.2205L10.8344 10.2688C10.8508 10.5517 10.683 10.8129 10.4189 10.9156C10.4304 10.9111 10.4276 10.9137 10.4183 10.9221L10.4183 10.9221C10.4133 10.9266 10.4065 10.9328 10.399 10.9404C10.277 11.066 10.2603 11.3075 10.5758 11.8742L10.6006 11.8892Z" fill="black"></path></svg></a></li>
-                            <li><a href=""><svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="_3yKHc2dumpkFgr47i-p-H"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.41 19.351c2.873-3.434 2.699-8.56-.522-11.79a8.706 8.706 0 00-12.334 0c-3.405 3.414-3.405 8.947 0 12.36a8.708 8.708 0 0011.821.475l4.37 4.387a.735.735 0 001.04-1.037L20.41 19.35zM18.846 8.599a7.236 7.236 0 00-10.253 0 7.285 7.285 0 000 10.284 7.237 7.237 0 0010.253 0 7.285 7.285 0 000-10.284z" fill="#414B56"></path></svg></a></li>
-                            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 471.701 471.701" xml:space="preserve">
-                              
-                                    <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"/>
-                              
-                                </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row head_body">
-                    <div class="para1">NEW SEASON</div>
-                    <div class="para2">MOMENTUM</div>
-                </div>
-
-                <div class="row shorping_btn">
-                    <div class="shop_bnt"><a href="#">SHOP WOMEN</a></div>
-                    <div class="shop_bnt"><a href="#">SHOP MEN</a></div>
-                </div>
-
-            </div>
-        </div> 
-        <!-- ----------card--- -->
-
-        <div class="row container">
-            <div class="row card_row">
-                <div class="card_img">
-                    <img src="assets/image 18.png" alt="">
-                    <p class="card_text">Weekend Wear</p>
-                </div>
-                <div class="card_img">
-                    <img src="assets/image 16.png" alt="">
-                    <p class="card_text">Merino Wool </p>
-                    <a class="card_img_a1" href="">Shop Womens</a>
-                    <a href="">Shop Mens</a>
-                </div>
-                <div class="card_img">
-                    <img src="assets/image 17.png" alt="">
-                    <p class="card_text">Cotton Staples </p>
-                </div>
-            </div>
+    <!-- ----------Header Banner--------- -->
+    <div class="container banner_container">
+      <div class="banner_head">
+        <div class="row row_btn">
+          <div class="head_menu ul_li">
+            <ul>
+              <li><a href="">WOMEN</a></li>
+              <li><a href="">MEN</a></li>
+              <li><a href="">COLLECTIONS</a></li>
+            </ul>
+          </div>
+          <div class="head_name head_saba">SABA</div>
+          <div class="head_btn ul_li">
+            <ul>
+              <li>
+                <a href=""
+                  ><svg
+                    width="1rem"
+                    height="1rem"
+                    viewBox="0 0 27 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="_3yKHc2dumpkFgr47i-p-H"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.1718 11.7062C11.5198 11.7062 11.8018 11.4032 11.8018 11.0295V9.4964H15.1144L15.1144 11.0295C15.1144 11.4032 15.3965 11.7062 15.7444 11.7062C16.0924 11.7062 16.3744 11.4032 16.3744 11.0295V9.4964H19.1584L20.066 21.0708C20.101 21.4918 19.9704 21.9057 19.7065 22.2144C19.4425 22.5232 19.0697 22.6982 18.6795 22.6965L18.677 22.6965H8.04809C7.65692 22.6971 7.28445 22.521 7.02125 22.2114C6.75806 21.9018 6.62851 21.4875 6.6644 21.07L7.64398 9.4964H10.5418L10.5418 11.0295C10.5418 11.4032 10.8239 11.7062 11.1718 11.7062ZM10.5418 8.14307H7.06864C6.7428 8.14307 6.47073 8.40994 6.44123 8.75847L5.40964 20.9465C5.34122 21.7423 5.58848 22.5331 6.0908 23.124C6.59312 23.7148 7.304 24.051 8.04893 24.0499H18.6758C19.4201 24.0526 20.1311 23.7187 20.6346 23.1298C21.1383 22.5405 21.3876 21.7505 21.3213 20.9537L20.3653 8.76294C20.3378 8.41249 20.0649 8.14307 19.7375 8.14307H16.3744V6.7469C16.3703 5.15719 15.1729 3.87114 13.6946 3.86667L13.2234 3.86667C11.7433 3.87114 10.546 5.15719 10.5418 6.74499L10.5418 8.14307ZM11.8018 8.14307H15.1144L15.1144 6.7488C15.1122 5.90545 14.4763 5.22237 13.6928 5.22L13.2252 5.22C12.44 5.22237 11.804 5.90545 11.8018 6.7469V8.14307Z"
+                      fill="black"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><svg
+                    width="1rem"
+                    height="1rem"
+                    viewBox="0 0 28 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.4805 15.4059C10.7055 14.7083 10.1183 13.7841 9.85072 12.9619C9.83525 12.952 9.81987 12.9417 9.80416 12.9308C9.66516 12.8339 9.55035 12.7143 9.45786 12.552C8.85258 11.4838 8.90589 10.6023 9.46166 10.0301C9.48206 10.0091 9.50253 9.98908 9.52302 9.97007C9.52672 9.4865 9.57747 8.94564 9.70538 8.41279C9.71991 8.35225 9.73537 8.29248 9.75239 8.23128C9.85887 7.85368 10.1177 7.3353 10.5975 6.82166C11.3855 5.97804 12.5152 5.47333 14.0008 5.47333C15.4866 5.47333 16.6165 5.97802 17.4047 6.82161C17.8845 7.33526 18.1434 7.85366 18.2505 8.23352C18.2669 8.29248 18.2824 8.35225 18.2969 8.41279C18.4229 8.93775 18.4741 9.47049 18.4791 9.94856C18.4912 9.95916 18.5033 9.97009 18.5153 9.98136C19.0959 10.5238 19.1445 11.4139 18.5373 12.5465C18.4562 12.6977 18.3522 12.8187 18.2283 12.9172C18.2019 12.9383 18.1748 12.958 18.1485 12.9761C17.8564 13.815 17.2725 14.7233 16.5143 15.4077C16.5717 15.4495 16.6509 15.5045 16.7512 15.5695C17.0381 15.7556 17.3769 15.9431 17.7642 16.1189C17.9732 16.2138 18.191 16.3026 18.4172 16.3842C20.8972 17.2789 22.0182 19.2391 22.2086 22.2302C22.2689 23.1645 21.4929 24.06 20.5403 24.06H7.45581C6.49229 24.06 5.7309 23.1525 5.78819 22.2068C5.97402 19.2082 7.07287 17.3492 9.58059 16.4445C9.83078 16.3543 10.0684 16.2543 10.2933 16.1463C10.6501 15.9748 10.9571 15.7922 11.2129 15.6115C11.3482 15.5159 11.4378 15.4439 11.4805 15.4059ZM12.5343 16.1345C12.4993 16.2164 12.4468 16.2924 12.3771 16.3567C12.0997 16.6131 11.5916 16.9721 10.8592 17.324C10.5948 17.4511 10.3163 17.5683 10.0239 17.6737C8.06736 18.3795 7.24872 19.7645 7.09241 22.2867C7.07876 22.5121 7.28116 22.7533 7.45581 22.7533H20.5403C20.7137 22.7533 20.9178 22.5178 20.9046 22.3137C20.7442 19.7927 19.8939 18.3061 17.9737 17.6133C17.7143 17.5197 17.4644 17.4178 17.2242 17.3087C16.4514 16.958 15.9023 16.6019 15.5977 16.3505C15.5284 16.2933 15.474 16.2248 15.4348 16.1499C14.9834 16.3704 14.5003 16.5 14.0008 16.5C13.4893 16.5 12.9947 16.3639 12.5343 16.1345ZM10.6006 11.8892C10.7954 12.0082 10.9259 12.1299 11.0482 12.4248C11.4037 13.601 12.7537 15.1933 14.0008 15.1933C15.2483 15.1933 16.5966 13.603 16.9473 12.4491C17.0105 12.2064 17.1434 12.0661 17.3292 11.9478L17.3984 11.9052C17.5991 11.5255 17.6744 11.2476 17.6644 11.0653C17.6601 10.9871 17.6454 10.9568 17.6233 10.9362L17.6214 10.9344C17.6147 10.9283 17.6135 10.9271 17.6377 10.934C17.346 10.85 17.1502 10.5736 17.1679 10.2688L17.1698 10.2205C17.1839 9.77533 17.1487 9.22756 17.0264 8.7178C17.0154 8.67218 17.0039 8.62746 16.9923 8.58592C16.9379 8.39306 16.7695 8.05573 16.4499 7.71365C15.9056 7.13104 15.1196 6.77999 14.0008 6.77999C12.8823 6.77999 12.0966 7.13101 11.5524 7.7136C11.2329 8.0557 11.0644 8.39304 11.0107 8.58368C10.9985 8.62746 10.9869 8.67218 10.976 8.7178C10.8536 9.22756 10.8184 9.77533 10.8325 10.2205L10.8344 10.2688C10.8508 10.5517 10.683 10.8129 10.4189 10.9156C10.4304 10.9111 10.4276 10.9137 10.4183 10.9221L10.4183 10.9221C10.4133 10.9266 10.4065 10.9328 10.399 10.9404C10.277 11.066 10.2603 11.3075 10.5758 11.8742L10.6006 11.8892Z"
+                      fill="black"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="_3yKHc2dumpkFgr47i-p-H"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.41 19.351c2.873-3.434 2.699-8.56-.522-11.79a8.706 8.706 0 00-12.334 0c-3.405 3.414-3.405 8.947 0 12.36a8.708 8.708 0 0011.821.475l4.37 4.387a.735.735 0 001.04-1.037L20.41 19.35zM18.846 8.599a7.236 7.236 0 00-10.253 0 7.285 7.285 0 000 10.284 7.237 7.237 0 0010.253 0 7.285 7.285 0 000-10.284z"
+                      fill="#414B56"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    height="800px"
+                    width="800px"
+                    version="1.1"
+                    id="Capa_1"
+                    viewBox="0 0 471.701 471.701"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-       
 
-     
-       
- </body>   
+        <div class="row head_body">
+          <div class="para1">NEW SEASON</div>
+          <div class="para2">MOMENTUM</div>
+        </div>
+
+        <div class="row shorping_btn">
+          <div class="shop_bnt"><a href="#">SHOP WOMEN</a></div>
+          <div class="shop_bnt"><a href="#">SHOP MEN</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------card--- -->
+
+    <div class="row container">
+      <div class="row card_row">
+        <div class="card_img">
+          <img src="assets/image 18.png" alt="" />
+          <p class="card_text">Weekend Wear</p>
+        </div>
+        <div class="card_img">
+          <img src="assets/image 16.png" alt="" />
+          <p class="card_text">Merino Wool</p>
+          <p class="shop_women">
+            <a href="#">Shop Womens</a> <a href="#">Shop Mens</a>
+          </p>
+        </div>
+        <div class="card_img">
+          <img src="assets/image 17.png" alt="" />
+          <p class="card_text">Cotton Staples</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="horizontal_line"></div>
+    <br />
+    <!-- --------------slider------------  -->
+
+    <div class="container_slider">
+      <div class="slider_head"><h2>NEW ARRIVALS.</h2></div>
+
+      <div class="container slider_cards">
+        <div class="slider">
+          <img src="assets/card1.png" alt="card1" />
+          <p class="slider_product_name">Product Name</p>
+          <p class="slider_product_desc">3 colours | European fabric</p>
+          <div class="card_after"><p>+ QUICK ADD</p></div>
+        </div>
+        <div class="slider">
+          <img src="assets/card2.png" alt="card2" />
+          <p class="slider_product_name">Product Name</p>
+          <p class="slider_product_desc">3 colours | European fabric</p>
+          <div class="card_after"><p>+ QUICK ADD</p></div>
+        </div>
+        <div class="slider">
+          <img src="assets/card3.png" alt="card3" />
+          <p class="slider_product_name">Product Name</p>
+          <p class="slider_product_desc">3 colours | European fabric</p>
+          <div class="card_after"><p>+ QUICK ADD</p></div>
+        </div>
+
+        <div class="slider">
+          <img src="assets/card4.png" alt="card4" />
+          <p class="slider_product_name">Product Name</p>
+          <p class="slider_product_desc">3 colours | European fabric</p>
+          <div class="card_after"><p>+ QUICK ADD</p></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
