@@ -363,6 +363,7 @@ p.right_mrp {
 .slider {
     position: relative;
     margin-right: 10px;
+    width: 34%;
 }
 
 .slider:hover {
@@ -852,8 +853,8 @@ p.right_mrp {
     align-items: center;
     flex-shrink: 0;
     position: relative;
-    left: -45px;
-    top: 21px;
+    left: -47px;
+    top: 20px;
 }
 
 .go_up_button {

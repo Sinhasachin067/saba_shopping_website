@@ -182,7 +182,7 @@
         <div class="slider">
           <img src="assets/card1.png" alt="card1" />
           <p class="slider_product_name">Product Name <p class="right_heart slider_product_desc ">
-            <i class="fa fa-heart heart_path" ></i> 
+            <i id="heart_path" class="fa fa-heart " ></i>
           </p></p>
           <p class="slider_product_desc">3 colours | European fabric <p class="right_mrp slider_product_desc ">$200.00</p></p>
           <div class="card_after"><p>+ QUICK ADD</p></div>
@@ -323,9 +323,13 @@
             <p class="f_t_r_heading">BECOME A VIP</p> 
             <div class="go_up_button"><img src="assets/Go up Button.svg" alt=""></div>
             <p class="f_t_r_body">Enter your email below to be the first to know about new collections, promotions and product launches.</p>
-            <div class="input_country"><input type="text" placeholder="Enter email address"><div class="input_usa_flag"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="17" viewBox="0 0 29 17" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.319 0.000488281V0.534488V0.716203V0.801917L11.1418 2.39706H14.319V2.87792V3.59792V4.3162V4.79535H11.1418L14.319 6.3922V6.66049V7.19535V7.24163H13.3415H12.9756H12.8076L8.35017 5.00106V7.24163H7.87168H7.15607H6.44132H5.96282V5.00106L1.50627 7.24163H0.972339H0V16.7816H28.6268V0.000488281H14.319Z" fill="#1A237B"/>
-         </svg></div> <div class="input_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <div class="input_country"><input type="text" placeholder="Enter email address">
+              <div class="input_usa_flag">
+               <img src="assets/Flag_of_New_Zealand.svg.png" alt="" height="20" >
+              
+        </div> 
+         
+         <div class="input_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
               <g id="icon/control/arrow right 1">
               <path id="Path" d="M11.5434 5.68497C11.4045 5.70978 11.2945 5.81192 11.2554 5.94617C11.2163 6.08334 11.2568 6.2278 11.3582 6.32411L14.7422 9.73579H3.86641C3.85483 9.73579 3.84325 9.73579 3.83167 9.73579C3.62903 9.74455 3.46982 9.91966 3.47995 10.1239C3.49008 10.3282 3.66232 10.4873 3.86641 10.4771H14.7422L11.3582 13.8888C11.2496 13.9792 11.1989 14.1222 11.2308 14.2623C11.2626 14.3995 11.3697 14.5089 11.5072 14.541C11.6447 14.5731 11.788 14.5221 11.8763 14.4112L15.8929 10.3735L16.1462 10.1064L15.8929 9.8394L11.8763 5.80171C11.7996 5.71853 11.6896 5.67621 11.5767 5.68497C11.5651 5.68497 11.555 5.68497 11.5434 5.68497Z" fill="white"/>
               </g>
@@ -353,11 +357,11 @@
 
   </body>
   <script>
-    let Heart= document.getElementById("heart_path");
-    Heart.addEventListener('click',function(e){
+  
+    document.getElementById("heart_path").addEventListener('click',function(e){
       console.log(e)
-      this.style.color="red";
-      <!-- this.classList.toggle("Heart_colorR"); -->
+      <!-- this.style.color="red"; -->
+      this.classList.toggle("Heart_colorR");
  console.log('sachin');
  })
 
